@@ -1,14 +1,12 @@
 use bevy::prelude::*;
 
-/// This example shows how to configure Physically Based Rendering (PBR) parameters.
-pub fn pbr_run() {
+pub fn run() {
     App::new()
         .add_plugins(DefaultPlugins)
         .add_startup_system(setup)
         .run();
 }
 
-/// set up a simple 3D scene
 pub fn setup(
     mut commands: Commands,
     mut meshes: ResMut<Assets<Mesh>>,

@@ -4,9 +4,8 @@ use bevy::{
     sprite::collide_aabb::{collide, Collision},
 };
 
-/// An implementation of the classic game "Breakout"
 const TIME_STEP: f32 = 1.0 / 60.0;
-pub fn prac_run() {
+pub fn run() {
     App::new()
         .add_plugins(DefaultPlugins)
         .insert_resource(Scoreboard { score: 0 })
@@ -288,6 +287,7 @@ fn ball_collision_system(
                 Collision::Right => reflect_x = velocity.x < 0.0,
                 Collision::Top => reflect_y = velocity.y < 0.0,
                 Collision::Bottom => reflect_y = velocity.y > 0.0,
+                Collision::Inside => {}
             }
 
             // reflect velocity on the x-axis if we hit something on the x-axis

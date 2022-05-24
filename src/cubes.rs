@@ -3,7 +3,7 @@ use bevy::{
     prelude::*,
 };
 
-pub fn run_cubes() {
+pub fn run() {
     App::new()
         .add_plugins(DefaultPlugins)
         .add_startup_system(set_up)

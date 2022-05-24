@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 
-pub fn area_light_run() {
+pub fn run() {
     App::new()
         .insert_resource(ClearColor(Color::BLACK))
         .add_plugins(DefaultPlugins)
@@ -30,7 +30,7 @@ pub fn setup(
     const COUNT: usize = 6;
     let postion_range = -4.0..4.0;
     let radius_range = 0.0..0.8;
-    let pos_len = postion_range.end - postion_range.start;
+    // let pos_len = postion_range.end - postion_range.start;
     let radius_len = radius_range.end - radius_range.start;
     let mesh = meshes.add(Mesh::from(shape::UVSphere {
         sectors: 128,

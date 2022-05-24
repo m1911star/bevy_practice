@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 
-pub fn button_run() {
+pub fn run() {
     App::new()
         .add_plugins(DefaultPlugins)
         .add_startup_system(setup)

@@ -1,6 +1,6 @@
 use bevy::{prelude::*, sprite::MaterialMesh2dBundle};
 
-pub fn mesh_run() {
+pub fn run() {
     App::new()
         .add_plugins(DefaultPlugins)
         .add_startup_system(setup)
