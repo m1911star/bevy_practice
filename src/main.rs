@@ -22,7 +22,7 @@ use std::{
 };
 
 fn main() {
-    // practice::run();
+    practice::run();
     // button::run();
     // area_light::run();
     // pbr::run();
@@ -30,7 +30,7 @@ fn main() {
     // shadow::run();
     // mesh::run();
     // cubes::run();
-    animation_transform::run();
+    // animation_transform::run();
     // App::new()
     //     .add_plugins(DefaultPlugins)
     //     .insert_resource(ClearColor(Color::WHITE))

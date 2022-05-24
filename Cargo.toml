@@ -8,3 +8,8 @@ edition = "2021"
 [dependencies]
 bevy = { version = "0.7.0" }
 rand = "0.8.4"
+wasm-server-runner = "0.2.2"
+
+[target.wasm32-unknown-unknown]
+runner="wasm-server-runner"
+
