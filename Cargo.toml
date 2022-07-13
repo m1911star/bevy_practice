@@ -12,4 +12,3 @@ wasm-server-runner = "0.2.2"
 
 [target.wasm32-unknown-unknown]
 runner="wasm-server-runner"
-
